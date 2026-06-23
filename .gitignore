@@ -1,0 +1,44 @@
+# ── Secrets & environment ─────────────────────────────────────────────────────
+.env
+*.env.*
+!.env.example
+
+# ── Python artefacts ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+myenv/
+.venv/
+venv/
+env/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/*
+!logs/.gitkeep
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ── Historical data (large CSV/TXT files) ────────────────────────────────────
+BULLFLAG/historical_data/
+EMACROSS/historical_data/
