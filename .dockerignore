@@ -1,0 +1,47 @@
+# ── Python artefacts ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environment ───────────────────────────────────────────────────
+myenv/
+.venv/
+venv/
+env/
+
+# ── Secrets and local config ──────────────────────────────────────────────
+.env
+*.env.*
+!.env.example
+
+# ── Logs (bots write their own inside the container) ─────────────────────
+*.log
+logs/
+
+# ── Git ───────────────────────────────────────────────────────────────────
+.git/
+.gitignore
+
+# ── IDE / editor ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ── Test / CI artefacts ───────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# ── Historical / backtest data (large, not needed at runtime) ─────────────
+**/historical_data/
+**/*.csv
+**/backtest_report.txt
