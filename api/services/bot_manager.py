@@ -2,20 +2,8 @@
 api/services/bot_manager.py
 ============================
 Subprocess-based bot lifecycle manager.
-
-Interview talking points:
-- Each bot runs as a child process (asyncio.create_subprocess_exec).
-  Process isolation means a crashing bot cannot bring down the API — the API
-  is the control plane, bots are the data plane.
-- asyncio.create_subprocess_exec is non-blocking.  The API event loop stays
-  fully responsive while potentially 6 bots are running concurrently.
-- terminate() sends SIGTERM (graceful), followed by kill() if the process
-  does not exit within 10 seconds — a standard two-stage shutdown pattern.
-- BotProcess.refresh_statuses() is called before GET /bots/status so the
-  status reflects reality (a bot may have crashed since it was started).
-- The static BOT_REGISTRY dict is the "discovery manifest".  In a more
-  advanced system this would be auto-discovered by scanning folders for a
-  bot.json descriptor file, demonstrating a plugin / registry pattern.
+Each bot runs as an isolated child process — a crashed bot cannot affect
+the API or other bots. Lifecycle: start → SIGTERM → SIGKILL (if needed).
 """
 
 import asyncio

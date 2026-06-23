@@ -2,13 +2,7 @@
 api/auth/jwt_handler.py
 =======================
 Pure JWT utility functions — no FastAPI imports here intentionally.
-
-Interview talking points:
-- Two-token strategy: short-lived ACCESS token (30 min) + long-lived REFRESH token (7 days).
-  This limits the blast radius of a stolen access token while keeping the UX smooth.
-- The "type" claim inside the payload prevents a refresh token from being used as an
-  access token and vice versa — a common JWT security mistake to avoid.
-- Keeping this file framework-agnostic means it is independently unit-testable.
+Framework-agnostic so this module can be unit-tested in isolation.
 """
 
 from datetime import datetime, timedelta, timezone

@@ -2,22 +2,7 @@
 main.py
 =======
 FastAPI application factory and entry point.
-
-Interview talking points:
-- lifespan() is an async context manager (introduced FastAPI 0.95+, replaces the
-  deprecated @app.on_event decorators).  Everything before the `yield` runs on
-  startup; everything after runs on shutdown.  This keeps lifecycle logic together
-  and makes the startup/shutdown contract explicit.
-- app.state is the idiomatic place for shared service singletons (BotManager).
-  Using dependency injection (request.app.state) rather than module-level globals
-  makes the services testable — you can swap them in tests via app.state assignment.
-- Logging is configured before the app object is created so that even import-time
-  log messages use the correct handlers.
-- CORS middleware is included so a browser-based dashboard can call the API.
-  In production, restrict allow_origins to your actual frontend domain.
-- The admin seed user is created on first startup only.  This is a common
-  bootstrapping pattern — the first run sets up the initial credentials, and
-  subsequent runs are no-ops.
+Uses the lifespan context manager for startup/shutdown (FastAPI 0.95+ pattern).
 """
 
 import logging

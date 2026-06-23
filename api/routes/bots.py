@@ -2,18 +2,7 @@
 api/routes/bots.py
 ==================
 Bot lifecycle management endpoints.
-
-Interview talking points:
-- Request is injected by FastAPI to give access to app.state.  This is how
-  shared services (BotManager) are accessed without global variables — they
-  live on app.state, which is scoped to the application lifetime.
-- All mutating operations (start/stop/restart) are POST.  GET /bots and
-  GET /bots/status are read-only — correct use of HTTP semantics.
-- ValueError (unknown bot) → 404,  RuntimeError (wrong state) → 409 Conflict.
-  Mapping domain exceptions to the right HTTP status codes is a common
-  interview question.
-- Every route requires a valid JWT via Depends(get_current_user).  The
-  dependency is declared once and FastAPI wires it automatically.
+All routes require a valid JWT. ValueError → 404, RuntimeError → 409 Conflict.
 """
 
 import logging

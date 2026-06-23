@@ -2,17 +2,7 @@
 api/services/oanda_service.py
 ==============================
 Async OANDA REST API client used by the account/positions/trades routes.
-
-Interview talking points:
-- httpx.AsyncClient is used instead of the requests library.  'requests' is
-  synchronous and would block the entire asyncio event loop during an HTTP call,
-  defeating the purpose of FastAPI's async architecture.
-- The client is created fresh per-call with `async with`.  For high-throughput
-  production use you would create a single shared client on app startup
-  (stored in app.state) and reuse it — reducing TCP handshake overhead.
-- All credentials come from the settings singleton — zero hardcoded secrets.
-- httpx.HTTPStatusError is raised by raise_for_status() and propagated to
-  the route layer, which maps it to a 502 Bad Gateway response.
+Uses httpx.AsyncClient to avoid blocking the event loop.
 """
 
 import logging
@@ -104,13 +94,6 @@ async def get_recent_signals(root_dir: str, max_lines: int = 30) -> list[SignalE
     Read the most recent log entries from each bot's log file and surface
     them as 'signals'.  VWAPFADEAWAY writes structured JSON; others write
     plain text — both are handled.
-
-    Interview talking point:
-    - This is a lightweight alternative to a message broker (Kafka/RabbitMQ).
-      For a production system you would have bots publish to a shared queue
-      and this endpoint would consume from it.  The file-based approach
-      demonstrates pragmatic design: the existing bots are untouched and the
-      API adds value without requiring any refactoring.
     """
     import json
     from datetime import datetime, timezone

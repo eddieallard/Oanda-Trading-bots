@@ -2,16 +2,8 @@
 api/services/auth_service.py
 =============================
 User management and password hashing.
-
-Interview talking points:
-- bcrypt is used directly (without passlib) for password hashing.
-  bcrypt is deliberately slow (work factor), making brute-force attacks expensive.
-  Never use MD5/SHA-256 directly for passwords — they are too fast.
-- USERS_DB is intentionally an in-memory dict to keep the project self-contained.
-  In production you would replace this with a repository pattern backed by
-  PostgreSQL/SQLite (via SQLAlchemy) or a cache like Redis — no route code changes.
-- Structuring get_user() / create_user() as functions (not methods) makes them
-  easy to mock in unit tests via unittest.mock.patch.
+Passwords are hashed with bcrypt. The in-memory user store can be replaced
+with a database-backed repository without changing any route code.
 """
 
 from typing import Optional

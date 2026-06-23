@@ -2,18 +2,7 @@
 api/routes/account.py
 =====================
 OANDA account, position, trade, and signal endpoints.
-
-Interview talking points:
-- Each route is a thin orchestration layer: validate input (done by FastAPI),
-  call the service, handle domain errors, return response.  Zero business logic
-  lives in route handlers — that belongs in the service layer.
-- httpx.HTTPStatusError (upstream OANDA error) is caught here and mapped to
-  HTTP 502 Bad Gateway — the correct status when *our* server received a bad
-  response from an *upstream* dependency.
-- GET /signals reads recent bot log entries.  In production this would be
-  replaced by a pub/sub mechanism (Redis streams, Kafka) — the route signature
-  would not change, only the service implementation.
-- root_dir is derived from app.state so routes remain stateless and testable.
+OANDA API errors are mapped to 502 Bad Gateway. All routes require JWT auth.
 """
 
 import logging

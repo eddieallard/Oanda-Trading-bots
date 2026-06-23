@@ -2,17 +2,7 @@
 api/routes/auth.py
 ==================
 Authentication endpoints: login and token refresh.
-
-Interview talking points:
-- POST /auth/login accepts credentials, returns both an access token and a
-  refresh token.  The client stores the refresh token securely (httpOnly cookie
-  in a browser app) and uses it to obtain new access tokens without re-login.
-- POST /auth/refresh validates the refresh token and issues a fresh pair.
-  This is the "silent refresh" pattern used in production SPAs.
-- We return HTTP 401 for bad credentials — not 403.  401 = unauthenticated,
-  403 = authenticated but not authorised.  Getting this right matters in interviews.
-- The failed login warning log is important for security auditing — unusual
-  patterns (many failures for one user) indicate a brute-force attempt.
+Returns 401 for bad credentials (unauthenticated), not 403 (unauthorised).
 """
 
 import logging

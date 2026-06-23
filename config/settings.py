@@ -2,13 +2,7 @@
 config/settings.py
 ==================
 Central configuration using Pydantic BaseSettings.
-
-Interview talking points:
-- BaseSettings reads values from environment variables (or .env via python-dotenv).
-- Fields with no default are *required* — the app refuses to start if they are absent.
-  This "fail fast" behaviour prevents silent misconfigurations in production.
-- All downstream code imports the `settings` singleton; nothing calls os.getenv() directly.
-- This is the 12-Factor App methodology (https://12factor.net/config).
+All secrets are read from the environment (or .env file) — never hardcoded.
 """
 
 from pydantic_settings import BaseSettings, SettingsConfigDict

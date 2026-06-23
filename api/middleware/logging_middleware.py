@@ -2,18 +2,8 @@
 api/middleware/logging_middleware.py
 =====================================
 Structured access log for every HTTP request.
-
-Interview talking points:
-- BaseHTTPMiddleware wraps every request regardless of which route handles it —
-  a clean cross-cutting concern implemented in one place (AOP-style).
-- We log *after* the response so we can include the status code and duration.
-  Logging before the response would miss that information.
-- perf_counter() is used instead of time.time() for sub-millisecond precision.
-  time.time() has platform-dependent resolution; perf_counter() is monotonic.
-- The structured format (key=value pairs) is deliberately machine-parseable so
-  tools like Datadog, Grafana Loki, or Splunk can ingest and query it without
-  custom parsers.
-- The /health path is excluded from logs to avoid noise from orchestrator probes.
+Logs method, path, status code, and duration in a machine-parseable format.
+The /health path is excluded to suppress orchestrator probe noise.
 """
 
 import logging

@@ -1,18 +1,7 @@
-# ============================================================
-# Dockerfile
-# ============================================================
-# Interview talking points:
-# - Multi-stage builds are the production standard.  Stage 1 (builder)
-#   installs dependencies into a venv.  Stage 2 (runtime) copies only
-#   that venv — keeping the final image lean and free of build toolchain.
-# - python:3.13-slim is used instead of the full image to minimise the
-#   attack surface (fewer OS packages = fewer CVEs).
-# - Running as a non-root user (appuser) is a security best practice.
-#   If the container is compromised, the attacker has no root privileges.
-# - PYTHONDONTWRITEBYTECODE / PYTHONUNBUFFERED are standard FastAPI/uvicorn
-#   settings: no .pyc clutter and logs appear in real-time (important for
-#   Docker log drivers like CloudWatch or Datadog).
-# ============================================================
+# ── Multi-stage build ─────────────────────────────────────────────────────────
+# Stage 1 (builder): installs deps into a venv
+# Stage 2 (runtime): copies only the venv — no build toolchain in the final image
+# Runs as non-root user (appuser) for container security.
 
 # ── Stage 1: dependency builder ──────────────────────────────────────────
 FROM python:3.13-slim AS builder

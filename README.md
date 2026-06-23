@@ -18,7 +18,6 @@ A production-quality **FastAPI** backend that wraps a collection of algorithmic 
 - [Authentication Flow](#authentication-flow)
 - [Environment Variables](#environment-variables)
 - [Design Decisions](#design-decisions)
-- [Interview Talking Points](#interview-talking-points)
 
 ---
 
@@ -298,23 +297,6 @@ The bots were designed to be run directly (`python bot.py`). Importing them as m
 ### Why two JWT tokens (access + refresh)?
 
 A short-lived access token (30 min) limits the damage if it is stolen — it expires quickly. A long-lived refresh token (7 days) lets the user stay logged in without re-entering credentials. The `type` claim inside the payload ensures a refresh token cannot be used as an access token (a common JWT vulnerability).
-
----
-
-## Interview Talking Points
-
-| Topic | Implementation |
-|---|---|
-| **FastAPI lifecycle** | `lifespan` async context manager (modern replacement for deprecated `@app.on_event`) |
-| **Dependency injection** | `Depends(get_current_user)` — routes declare dependencies, FastAPI wires them |
-| **Async programming** | `asyncio.create_subprocess_exec`, `httpx.AsyncClient` — event loop never blocked |
-| **12-Factor config** | `pydantic-settings` BaseSettings — config from environment, not code |
-| **Security** | bcrypt hashing, JWT two-token pattern, non-root Docker user, secrets in `.env` |
-| **HTTP semantics** | GET=read, POST=mutate; 401 vs 403; 404 vs 409; 502 for upstream failures |
-| **Structured logging** | Middleware logs method/path/status/duration — machine-parseable for Datadog/Loki |
-| **Docker best practices** | Multi-stage build, non-root user, layer cache on requirements, single worker |
-| **Process isolation** | Bots as subprocesses — crash isolation, SIGTERM→SIGKILL two-stage shutdown |
-| **Clean architecture** | Routes → Services → Models; no business logic in route handlers |
 
 ---
 
