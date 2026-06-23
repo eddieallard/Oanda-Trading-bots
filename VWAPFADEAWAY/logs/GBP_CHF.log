@@ -1,0 +1,36 @@
+2025-12-16 18:12:03,767 {"timestamp": "2025-12-16T23:12:03.766332+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 3.5}
+2025-12-16 18:13:18,918 {"timestamp": "2025-12-16T23:13:18.917981+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 3.0}
+2025-12-16 18:14:33,985 {"timestamp": "2025-12-16T23:14:33.985735+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.9}
+2025-12-16 18:15:50,645 {"timestamp": "2025-12-16T23:15:50.645212+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.6}
+2025-12-16 18:17:06,532 {"timestamp": "2025-12-16T23:17:06.532128+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:18:21,884 {"timestamp": "2025-12-16T23:18:21.884357+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:19:49,893 {"timestamp": "2025-12-16T23:19:49.893743+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.6}
+2025-12-16 18:21:07,366 {"timestamp": "2025-12-16T23:21:07.366717+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.8}
+2025-12-16 18:22:24,021 {"timestamp": "2025-12-16T23:22:24.020919+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.8}
+2025-12-16 18:23:40,370 {"timestamp": "2025-12-16T23:23:40.370469+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.6}
+2025-12-16 18:24:56,408 {"timestamp": "2025-12-16T23:24:56.408458+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.7}
+2025-12-16 18:26:30,210 {"timestamp": "2025-12-16T23:26:30.209848+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.6}
+2025-12-16 18:27:58,591 {"timestamp": "2025-12-16T23:27:58.591197+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:29:15,946 {"timestamp": "2025-12-16T23:29:15.946155+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:30:48,449 {"timestamp": "2025-12-16T23:30:48.448923+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:32:32,135 {"timestamp": "2025-12-16T23:32:32.135143+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:34:16,525 {"timestamp": "2025-12-16T23:34:16.525211+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:36:00,341 {"timestamp": "2025-12-16T23:36:00.341634+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:37:47,565 {"timestamp": "2025-12-16T23:37:47.565490+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:07:53,753 {"timestamp": "2025-12-17T02:07:53.753752+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:09:39,881 {"timestamp": "2025-12-17T02:09:39.881467+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:11:25,584 {"timestamp": "2025-12-17T02:11:25.584862+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:25:53,876 {"timestamp": "2025-12-17T02:25:53.875449+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 01:23:57,481 {"timestamp": "2025-12-17T06:23:57.481162+00:00", "instrument": "GBP_CHF", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:43:04,893 {"timestamp": "2025-12-17T06:43:04.892620+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 01:53:54,548 {"timestamp": "2025-12-17T06:53:54.548643+00:00", "instrument": "GBP_CHF", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-17 09:05:30,202 {"timestamp": "2025-12-17T14:05:30.201852+00:00", "instrument": "GBP_CHF", "event": "SETUP", "side": "BUY", "units": 164, "vwap": "1.066843604444444444444444444", "level": "1.063042500000000000000000000", "session": "LONDON"}
+2025-12-17 09:05:31,309 {"timestamp": "2025-12-17T14:05:31.309303+00:00", "instrument": "GBP_CHF", "event": "ORDER_SENT", "side": "BUY", "units": 164, "entry": "1.06270", "sl": "1.06210", "tp": "1.06390", "session": "LONDON"}
+2025-12-17 09:16:35,629 {"timestamp": "2025-12-17T14:16:35.629224+00:00", "instrument": "GBP_CHF", "event": "SETUP", "side": "BUY", "units": 164, "vwap": "1.066843982222222222222222222", "level": "1.06366000000000000000000000", "session": "LONDON"}
+2025-12-17 09:16:36,707 {"timestamp": "2025-12-17T14:16:36.707504+00:00", "instrument": "GBP_CHF", "event": "ORDER_SENT", "side": "BUY", "units": 164, "entry": "1.06330", "sl": "1.06270", "tp": "1.06450", "session": "LONDON"}
+2025-12-17 09:18:49,933 {"timestamp": "2025-12-17T14:18:49.933425+00:00", "instrument": "GBP_CHF", "event": "SETUP", "side": "BUY", "units": 164, "vwap": "1.066844075555555555555555556", "level": "1.06366000000000000000000000", "session": "LONDON"}
+2025-12-17 09:18:50,835 {"timestamp": "2025-12-17T14:18:50.835520+00:00", "instrument": "GBP_CHF", "event": "ORDER_SENT", "side": "BUY", "units": 164, "entry": "1.06332", "sl": "1.06272", "tp": "1.06452", "session": "LONDON"}
+2025-12-17 09:39:46,707 {"timestamp": "2025-12-17T14:39:46.707596+00:00", "instrument": "GBP_CHF", "event": "SETUP", "side": "BUY", "units": 164, "vwap": "1.066843293333333333333333333", "level": "1.063042500000000000000000000", "session": "LONDON"}
+2025-12-17 09:39:48,061 {"timestamp": "2025-12-17T14:39:48.061107+00:00", "instrument": "GBP_CHF", "event": "ORDER_SENT", "side": "BUY", "units": 164, "entry": "1.06259", "sl": "1.06199", "tp": "1.06379", "session": "LONDON"}
+2025-12-17 09:59:16,749 {"timestamp": "2025-12-17T14:59:16.749298+00:00", "instrument": "GBP_CHF", "event": "SETUP", "side": "BUY", "units": 164, "vwap": "1.066843346666666666666666667", "level": "1.063042500000000000000000000", "session": "LONDON"}
+2025-12-17 09:59:17,744 {"timestamp": "2025-12-17T14:59:17.744132+00:00", "instrument": "GBP_CHF", "event": "ORDER_SENT", "side": "BUY", "units": 164, "entry": "1.06289", "sl": "1.06229", "tp": "1.06409", "session": "LONDON"}

@@ -1,0 +1,107 @@
+The trading bot is a Python-based automated system designed to trade forex instruments via the OANDA API. It operates on a strategy combining "key levels" (specifically, the previous calendar day's high and low prices) with "wick rejection" confirmation on 15-minute (M15) candles. The bot runs in a continuous loop for each configured instrument (specified in the .env file as TRADING_INSTRUMENTS, e.g., currency pairs like EUR_USD), using multi-threading to handle multiple instruments simultaneously. Trades are only placed under specific conditions, which I'll break down step by step, including timing, market conditions, data retrieval, calculations, and the core entry logic.
+
+### 1. **Overall Bot Activation and Loop Structure**
+   - The bot activates via `if __name__ == "__main__":`, logging "KEY LEVEL + WICK REJECTION BOT ACTIVE".
+   - It spawns a separate thread for each instrument using `threading.Thread(target=run, args=(inst,))`.
+   - The main thread then enters an infinite loop, sleeping for 300 seconds (5 minutes) between "HEARTBEAT" logs for all instruments and sessions. It shuts down if it's Friday after 11:00 AM NY time (via `friday_shutdown()`).
+   - Each instrument's thread runs the `run(inst)` function, which contains the core trading logic in a `while True` loop.
+   - Inside `run(inst)`:
+     - The loop checks conditions and potentially places trades approximately every 60 seconds (via `time.sleep(60)` at the end, or shorter sleeps like 30 seconds under certain conditions).
+     - Exceptions are caught, logged, and the loop retries after 60 seconds.
+   - **No trade duplication prevention**: If conditions are met multiple times (e.g., across loop iterations), it could place multiple identical trades, as there's no check for existing positions or recent trades.
+
+### 2. **Session and Time-Based Restrictions**
+   - Trades can only be placed during active trading sessions, defined in NY time (America/New_York timezone).
+   - Current time is fetched via `now_ny()` (using `datetime.now(tz=NY)`).
+   - Session determination (`session()`):
+     - "LONDON": 2:00 AM to 10:59 AM NY time (hours 2–10).
+     - "NEWYORK": 8:00 AM to 4:59 PM NY time (hours 8–16). Note the overlap with London from 8–10:59 AM.
+     - "OFF": All other times (e.g., Asian session, weekends, or overnight).
+   - If `session() == "OFF"` or `friday_shutdown()` returns True (Friday, hour >= 11:00 AM NY), the loop sleeps for 60 seconds and skips trading logic.
+   - **Friday shutdown**: On Fridays (weekday 4), if hour >= 11:00 AM NY, the bot logs "FRIDAY SHUTDOWN" and breaks the main loop, effectively stopping all operations. This likely avoids weekend gaps or low liquidity as forex markets close around 5:00 PM NY on Fridays.
+   - **Implication**: Trades are restricted to London and New York sessions on Monday–Thursday, and only up to 10:59 AM NY on Fridays. No trades during off-hours, weekends, or post-11:00 AM Fridays.
+
+### 3. **Account and Market Safety Checks**
+   - **Margin check** (`margin_ok()`):
+     - Queries OANDA account summary via API.
+     - Compares `marginCloseoutPercent` to `MARGIN_KILL` (0.90 or 90%).
+     - If >= 0.90 (high risk of margin call), logs a warning and sleeps for 300 seconds (5 minutes). No trade.
+   - **Spread check** (`spread(inst)`):
+     - Fetches current bid/ask prices via OANDA pricing API.
+     - Calculates spread in pips: `(ask - bid) / pip(inst)`, where `pip(inst)` is 0.0001 for non-JPY pairs (e.g., EUR_USD) or 0.01 for JPY pairs (e.g., USD_JPY).
+     - If spread > `MAX_SPREAD` (2.0 pips), sleeps for 30 seconds. No trade.
+     - This ensures trades only in liquid conditions with reasonable transaction costs.
+   - These checks happen every loop iteration (~every 60 seconds during active sessions). If either fails, no trade is attempted.
+
+### 4. **Data Retrieval for Key Levels and Candles**
+   - **Key levels**: Previous calendar day's high (PDH) and low (PDL).
+     - Calculated via `previous_day(inst)`:
+       - Determines "today" as `now_ny().date()` (current NY date).
+       - Start time: Midnight NY at the start of the previous day (`today - timedelta(days=1)`).
+       - End time: Midnight NY at the start of today.
+       - Fetches M15 candles in this 24-hour window via `candles()` function, using mid prices ("M").
+       - PDH = max high of all completed candles in that period.
+       - PDL = min low of all completed candles.
+     - Note: This is based on calendar days in NY time, not trading sessions. For example, if now is December 22, 2025, at 10:00 AM NY, it uses data from December 21, 00:00 NY to December 22, 00:00 NY. Forex markets are closed weekends, so weekend days would have no data (but the bot wouldn't run then anyway).
+   - **Recent candles for wick check**:
+     - Fetches M15 mid candles via `candles()` for the last 45 minutes: from `now - timedelta(minutes=45)` to `now`.
+     - Only includes completed candles (`c["complete"] == True`).
+     - Builds a Pandas DataFrame `df` with columns: open, high, low, close (as Decimal for precision).
+     - If `len(df) < 2`, sleeps 30 seconds and skips (ensures enough data for the check).
+     - Typically, 45 minutes covers ~3 M15 candles, but only completed ones are included. The exact number varies based on timing (e.g., just after a candle closes vs. mid-candle).
+   - These fetches use OANDA API with authentication from .env (ACCOUNT_ID, TOKEN).
+
+### 5. **Wick Rejection Confirmation**
+   - The core entry signal is checked on a specific candle: `last = df.iloc[-2]` (the **second-to-last** completed M15 candle in the 45-minute lookback).
+     - Why [-2]? This appears intentional but somewhat unusual. It means the bot is checking the wick on a candle that closed ~15–30 minutes ago (depending on when the loop runs relative to candle closures). The most recent completed candle (df.iloc[-1]) is ignored. This could be to allow some "confirmation" time or avoid acting on ultra-recent data, but the code doesn't explicitly confirm anything with the latest candle—it simply skips it.
+     - Example timing: If now is 10:01 AM and the last completed candle is 9:45–10:00 AM (iloc[-1]), the checked candle might be 9:30–9:45 AM (iloc[-2]).
+     - `price = last["close"]` (close of this second-to-last candle; used for SL/TP placement, not entry price).
+   - Wick rejection logic (`wick_rejection(candle, level, direction)`):
+     - Calculates candle range: `rng = high - low`. If rng == 0, returns False (no trade).
+     - **For SHORT (sell) at PDH level**:
+       - Conditions must all be True:
+         - `high > level` (PDH): The candle wicked above the level.
+         - `close < level` (PDH): Closed below the level (rejection).
+         - Upper wick ratio >= `WICK_RATIO` (0.60): `upper_wick = high - max(open, close)`, then `upper_wick / rng >= 0.60`.
+       - This detects a bearish rejection: price tested above PDH but was pushed back down, with at least 60% of the candle's range being the upper wick (indicating seller dominance).
+     - **For LONG (buy) at PDL level**:
+       - Conditions must all be True:
+         - `low < level` (PDL): The candle wicked below the level.
+         - `close > level` (PDL): Closed above the level (rejection).
+         - Lower wick ratio >= 0.60: `lower_wick = min(open, close) - low`, then `lower_wick / rng >= 0.60`.
+       - This detects a bullish rejection: price tested below PDL but was pushed back up, with at least 60% of the range being the lower wick (indicating buyer dominance).
+     - Only one direction is checked per loop; it prioritizes SHORT if both could theoretically apply (but unlikely on the same candle).
+   - If neither SHORT nor LONG wick rejection is detected on this specific candle, no trade. The loop logs a "HEARTBEAT" with current session, price (historical close), PDH/PDL, and current spread, then sleeps 60 seconds.
+
+### 6. **Trade Placement Details**
+   - If wick rejection is confirmed:
+     - Calculates stop-loss (SL) distance in pips: `pipsl = max(MIN_SL_PIPS, sp * SPREAD_PAD)` where sp is current spread in pips, MIN_SL_PIPS=5, SPREAD_PAD=1.5. This pads for volatility/slippage.
+     - `sl_dist = pipsl * pip(inst)` (converts to price units, e.g., 0.0005 for non-JPY if pipsl=5).
+     - `tp_dist = sl_dist * RR` (RR=2, so 2:1 reward:risk).
+     - **SHORT trade**:
+       - SL = `price + sl_dist` (above the historical close).
+       - TP = `price - tp_dist` (below the historical close).
+       - Units = -UNITS (-100, sell).
+     - **LONG trade**:
+       - SL = `price - sl_dist` (below the historical close).
+       - TP = `price + tp_dist` (above the historical close).
+       - Units = +UNITS (+100, buy).
+     - Places a market order via `place()`: Immediate execution at current market price (not the historical `price`), with SL and TP attached ("stopLossOnFill" and "takeProfitOnFill").
+     - Order type: MARKET, timeInForce: FOK (fill or kill), positionFill: DEFAULT.
+     - Logs the trade details.
+   - **Key note**: Entry is at current bid/ask (market), but SL/TP are based on the historical close of the second-to-last candle. If significant time has passed since that candle (up to ~15–30 min), this could lead to suboptimal placement relative to current price. No trailing stops or adjustments.
+
+### 7. **Summary of Exact Trade Trigger**
+The bot takes a trade **only when all these align in a single loop iteration**:
+- Active session (London or New York).
+- Not Friday after 11:00 AM NY.
+- Margin closeout < 90%.
+- Current spread <= 2.0 pips.
+- At least 2 completed M15 candles in the last 45 minutes.
+- The second-to-last completed M15 candle shows wick rejection:
+  - For SHORT: High > PDH, close < PDH, upper wick >= 60% of range.
+  - For LONG: Low < PDL, close > PDL, lower wick >= 60% of range.
+- PDH/PDL based on prior calendar day's M15 highs/lows (midnight-to-midnight NY).
+- Trade: Market order for 100 units (buy/sell), SL at historical close +/- min 5-pip padded distance, TP at 2x that distance.
+
+This strategy aims for reversal trades at daily support/resistance with candlestick confirmation, but its use of a lagged candle (iloc[-2]) and fixed units introduces risks like delayed entries or oversized positions. The bot doesn't manage open trades beyond initial SL/TP.

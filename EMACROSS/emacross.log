@@ -1,0 +1,38 @@
+2025-12-18 15:40:07,271 | PRICING STREAM STARTED
+2025-12-18 15:40:07,273 | EMA + ATR + IMBALANCE BOT LIVE
+2025-12-18 15:40:07,818 | PRICING STREAM CONNECTED
+2025-12-18 16:15:43,377 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-18 16:15:48,818 | PRICING STREAM CONNECTED
+2025-12-18 17:23:33,731 | PRICING STREAM CONNECTION ERROR: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-12-18 17:23:39,253 | PRICING STREAM CONNECTED
+2025-12-18 19:24:12,894 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-18 19:24:18,386 | PRICING STREAM CONNECTED
+2025-12-18 20:30:51,700 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-18 20:30:57,122 | PRICING STREAM CONNECTED
+2025-12-18 21:11:28,104 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-18 21:11:33,568 | PRICING STREAM CONNECTED
+2025-12-19 01:08:22,521 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 01:08:28,029 | PRICING STREAM CONNECTED
+2025-12-19 03:12:44,330 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 03:12:49,818 | PRICING STREAM CONNECTED
+2025-12-19 03:43:45,261 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 03:43:50,740 | PRICING STREAM CONNECTED
+2025-12-19 05:33:48,979 | PRICING STREAM CONNECTION ERROR: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-12-19 05:33:54,531 | PRICING STREAM CONNECTED
+2025-12-19 06:11:38,876 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 06:11:44,292 | PRICING STREAM CONNECTED
+2025-12-19 07:26:01,676 | PRICING STREAM CONNECTION ERROR: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-12-19 07:26:07,128 | PRICING STREAM CONNECTED
+2025-12-19 10:50:12,805 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 10:50:18,301 | PRICING STREAM CONNECTED
+2025-12-19 12:44:12,861 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 12:44:18,353 | PRICING STREAM CONNECTED
+2025-12-19 15:09:29,100 | FILLED AUD_USD BUY | spread_decision=0.40p | spread_fill=0.40p | imbalance=0.20 | latency=96.5ms
+2025-12-19 15:14:20,836 | FILLED AUD_USD BUY | spread_decision=0.40p | spread_fill=0.40p | imbalance=0.20 | latency=78.5ms
+2025-12-19 15:32:37,763 | FILLED AUD_USD BUY | spread_decision=0.40p | spread_fill=0.40p | imbalance=0.20 | latency=94.9ms
+2025-12-19 16:29:40,913 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 16:29:46,398 | PRICING STREAM CONNECTED
+2025-12-19 17:14:14,900 | PRICING STREAM CONNECTION ERROR: ('Connection broken: IncompleteRead(126 bytes read, 386 more expected)', IncompleteRead(126 bytes read, 386 more expected))
+2025-12-19 17:14:20,483 | PRICING STREAM CONNECTED
+2025-12-19 18:41:05,285 | PRICING STREAM CONNECTION ERROR: Response ended prematurely
+2025-12-19 18:41:11,463 | PRICING STREAM CONNECTED

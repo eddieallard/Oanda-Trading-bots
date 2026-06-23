@@ -1,0 +1,42 @@
+2025-12-16 18:11:53,639 {"timestamp": "2025-12-16T23:11:53.638946+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:13:09,893 {"timestamp": "2025-12-16T23:13:09.893854+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:14:25,178 {"timestamp": "2025-12-16T23:14:25.177954+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:15:41,390 {"timestamp": "2025-12-16T23:15:41.390223+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:16:57,863 {"timestamp": "2025-12-16T23:16:57.863759+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:18:13,114 {"timestamp": "2025-12-16T23:18:13.114046+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:19:30,334 {"timestamp": "2025-12-16T23:19:30.333878+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:20:57,843 {"timestamp": "2025-12-16T23:20:57.843257+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:22:15,229 {"timestamp": "2025-12-16T23:22:15.229044+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:23:31,499 {"timestamp": "2025-12-16T23:23:31.499543+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:24:47,700 {"timestamp": "2025-12-16T23:24:47.700318+00:00", "instrument": "GBP_USD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:26:05,343 {"timestamp": "2025-12-16T23:26:05.343857+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339658285714285714285714286"}
+2025-12-16 18:26:06,302 {"timestamp": "2025-12-16T23:26:06.302301+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34254", "sl": "1.34314", "tp": "1.34134"}
+2025-12-16 18:27:49,257 {"timestamp": "2025-12-16T23:27:49.257268+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339658285714285714285714286"}
+2025-12-16 18:27:49,631 {"timestamp": "2025-12-16T23:27:49.631862+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34254", "sl": "1.34314", "tp": "1.34134"}
+2025-12-16 18:29:06,438 {"timestamp": "2025-12-16T23:29:06.438679+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339658285714285714285714286"}
+2025-12-16 18:29:06,840 {"timestamp": "2025-12-16T23:29:06.840112+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34254", "sl": "1.34314", "tp": "1.34134"}
+2025-12-16 18:30:24,244 {"timestamp": "2025-12-16T23:30:24.244742+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339675714285714285714285714"}
+2025-12-16 18:30:25,188 {"timestamp": "2025-12-16T23:30:25.188343+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34254", "sl": "1.34314", "tp": "1.34134"}
+2025-12-16 18:32:08,202 {"timestamp": "2025-12-16T23:32:08.202457+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339675695238095238095238095"}
+2025-12-16 18:32:09,371 {"timestamp": "2025-12-16T23:32:09.371207+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34250", "sl": "1.34310", "tp": "1.34130"}
+2025-12-16 18:33:53,020 {"timestamp": "2025-12-16T23:33:53.020370+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339675790476190476190476190"}
+2025-12-16 18:33:53,960 {"timestamp": "2025-12-16T23:33:53.960854+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34260", "sl": "1.34320", "tp": "1.34140"}
+2025-12-16 18:35:35,121 {"timestamp": "2025-12-16T23:35:35.120905+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339675800000000000000000000"}
+2025-12-16 18:35:36,089 {"timestamp": "2025-12-16T23:35:36.088914+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34260", "sl": "1.34320", "tp": "1.34140"}
+2025-12-16 18:37:21,745 {"timestamp": "2025-12-16T23:37:21.745471+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.34246625000000000000000000", "vwap": "1.339694047619047619047619048"}
+2025-12-16 18:37:22,889 {"timestamp": "2025-12-16T23:37:22.888933+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34266", "sl": "1.34326", "tp": "1.34146"}
+2025-12-16 21:09:15,082 {"timestamp": "2025-12-17T02:09:15.082145+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.341238000000000000000000000", "vwap": "1.340165952380952380952380952"}
+2025-12-16 21:09:16,042 {"timestamp": "2025-12-17T02:09:16.041996+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34158", "sl": "1.34218", "tp": "1.34038"}
+2025-12-16 21:11:01,513 {"timestamp": "2025-12-17T02:11:01.512878+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "level": "1.341238000000000000000000000", "vwap": "1.340177885714285714285714286"}
+2025-12-16 21:11:02,613 {"timestamp": "2025-12-17T02:11:02.613307+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "entry": "1.34148", "sl": "1.34208", "tp": "1.34028"}
+2025-12-16 21:25:20,654 {"timestamp": "2025-12-17T02:25:20.650855+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "units": 93, "vwap": "1.340208085714285714285714286", "level": "1.340563333333333333333333333"}
+2025-12-16 21:25:21,894 {"timestamp": "2025-12-17T02:25:21.894467+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "units": 93, "entry": "1.34104", "sl": "1.34164", "tp": "1.33984"}
+2025-12-17 01:23:57,437 {"timestamp": "2025-12-17T06:23:57.435331+00:00", "instrument": "GBP_USD", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:42:48,009 {"timestamp": "2025-12-17T06:42:48.009019+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "units": 74, "vwap": "1.337039090909090909090909091", "level": "1.337768461538461538461538462", "session": "TOKYO"}
+2025-12-17 01:42:48,381 {"timestamp": "2025-12-17T06:42:48.380972+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "units": 74, "entry": "1.33826", "sl": "1.33886", "tp": "1.33706", "session": "TOKYO"}
+2025-12-17 09:04:48,855 {"timestamp": "2025-12-17T14:04:48.852699+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "units": 130, "vwap": "1.330834911111111111111111111", "level": "1.336190000000000000000000000", "session": "LONDON"}
+2025-12-17 09:04:50,018 {"timestamp": "2025-12-17T14:04:50.018409+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "units": 130, "entry": "1.33628", "sl": "1.33688", "tp": "1.33508", "session": "LONDON"}
+2025-12-17 09:15:51,520 {"timestamp": "2025-12-17T14:15:51.520427+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "units": 130, "vwap": "1.330834697777777777777777778", "level": "1.33556625000000000000000000", "session": "LONDON"}
+2025-12-17 09:15:52,604 {"timestamp": "2025-12-17T14:15:52.604671+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "units": 130, "entry": "1.33586", "sl": "1.33646", "tp": "1.33466", "session": "LONDON"}
+2025-12-17 09:58:15,315 {"timestamp": "2025-12-17T14:58:15.315503+00:00", "instrument": "GBP_USD", "event": "SETUP", "side": "SELL", "units": 130, "vwap": "1.330860368888888888888888889", "level": "1.336190000000000000000000000", "session": "LONDON"}
+2025-12-17 09:58:16,368 {"timestamp": "2025-12-17T14:58:16.368467+00:00", "instrument": "GBP_USD", "event": "ORDER_SENT", "side": "SELL", "units": 130, "entry": "1.33642", "sl": "1.33702", "tp": "1.33522", "session": "LONDON"}

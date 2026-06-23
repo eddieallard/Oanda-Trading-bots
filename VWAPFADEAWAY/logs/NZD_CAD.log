@@ -1,0 +1,38 @@
+2025-12-16 18:12:08,335 {"timestamp": "2025-12-16T23:12:08.334411+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:13:23,548 {"timestamp": "2025-12-16T23:13:23.547834+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.2}
+2025-12-16 18:14:38,766 {"timestamp": "2025-12-16T23:14:38.766803+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.1}
+2025-12-16 18:15:55,979 {"timestamp": "2025-12-16T23:15:55.979690+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "level": "0.7957738461538461538461538462", "vwap": "0.7960376666666666666666666667"}
+2025-12-16 18:15:56,344 {"timestamp": "2025-12-16T23:15:56.344877+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "entry": "0.79528", "sl": "0.79468", "tp": "0.79648"}
+2025-12-16 18:17:11,524 {"timestamp": "2025-12-16T23:17:11.524758+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:18:26,657 {"timestamp": "2025-12-16T23:18:26.657346+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:19:55,384 {"timestamp": "2025-12-16T23:19:55.384241+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:21:12,976 {"timestamp": "2025-12-16T23:21:12.976358+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:22:29,157 {"timestamp": "2025-12-16T23:22:29.157103+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:23:45,426 {"timestamp": "2025-12-16T23:23:45.426658+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:25:01,470 {"timestamp": "2025-12-16T23:25:01.470238+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:26:44,967 {"timestamp": "2025-12-16T23:26:44.967625+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:28:04,011 {"timestamp": "2025-12-16T23:28:04.011312+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:29:20,394 {"timestamp": "2025-12-16T23:29:20.394085+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:31:02,881 {"timestamp": "2025-12-16T23:31:02.880955+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:32:47,675 {"timestamp": "2025-12-16T23:32:47.675098+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:34:29,916 {"timestamp": "2025-12-16T23:34:29.916012+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:36:15,619 {"timestamp": "2025-12-16T23:36:15.619609+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "level": "0.79576000000000000000000000", "vwap": "0.7960161904761904761904761905"}
+2025-12-16 18:36:16,693 {"timestamp": "2025-12-16T23:36:16.693790+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "entry": "0.79570", "sl": "0.79510", "tp": "0.79690"}
+2025-12-16 18:38:01,799 {"timestamp": "2025-12-16T23:38:01.799302+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 21:08:08,480 {"timestamp": "2025-12-17T02:08:08.480024+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 21:11:31,155 {"timestamp": "2025-12-17T02:11:31.155634+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 21:26:16,907 {"timestamp": "2025-12-17T02:26:16.906078+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 01:23:57,537 {"timestamp": "2025-12-17T06:23:57.537067+00:00", "instrument": "NZD_CAD", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:43:12,519 {"timestamp": "2025-12-17T06:43:12.518885+00:00", "instrument": "NZD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 08:31:19,565 {"timestamp": "2025-12-17T13:31:19.565528+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "units": 219, "vwap": "0.7985490424242424242424242424", "level": "0.7959033333333333333333333333", "session": "LONDON"}
+2025-12-17 08:31:19,895 {"timestamp": "2025-12-17T13:31:19.895051+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 219, "entry": "0.79585", "sl": "0.79525", "tp": "0.79705", "session": "LONDON"}
+2025-12-17 09:06:01,580 {"timestamp": "2025-12-17T14:06:01.577357+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "units": 219, "vwap": "0.8006177644444444444444444444", "level": "0.796480", "session": "LONDON"}
+2025-12-17 09:06:02,699 {"timestamp": "2025-12-17T14:06:02.699769+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 219, "entry": "0.79628", "sl": "0.79568", "tp": "0.79748", "session": "LONDON"}
+2025-12-17 09:16:58,703 {"timestamp": "2025-12-17T14:16:58.702923+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "units": 219, "vwap": "0.8006175955555555555555555556", "level": "0.796480", "session": "LONDON"}
+2025-12-17 09:16:59,623 {"timestamp": "2025-12-17T14:16:59.623865+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 219, "entry": "0.79608", "sl": "0.79548", "tp": "0.79728", "session": "LONDON"}
+2025-12-17 09:19:18,369 {"timestamp": "2025-12-17T14:19:18.368979+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "units": 219, "vwap": "0.8006175822222222222222222222", "level": "0.796480", "session": "LONDON"}
+2025-12-17 09:19:19,325 {"timestamp": "2025-12-17T14:19:19.325133+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 219, "entry": "0.79608", "sl": "0.79548", "tp": "0.79728", "session": "LONDON"}
+2025-12-17 09:29:41,073 {"timestamp": "2025-12-17T14:29:41.073251+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "units": 219, "vwap": "0.8006176088888888888888888889", "level": "0.796480", "session": "LONDON"}
+2025-12-17 09:29:42,130 {"timestamp": "2025-12-17T14:29:42.129921+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 219, "entry": "0.79614", "sl": "0.79554", "tp": "0.79734", "session": "LONDON"}
+2025-12-17 09:40:21,123 {"timestamp": "2025-12-17T14:40:21.123468+00:00", "instrument": "NZD_CAD", "event": "SETUP", "side": "BUY", "units": 219, "vwap": "0.8006218755555555555555555556", "level": "0.796480", "session": "LONDON"}
+2025-12-17 09:40:22,159 {"timestamp": "2025-12-17T14:40:22.159826+00:00", "instrument": "NZD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 219, "entry": "0.79642", "sl": "0.79582", "tp": "0.79762", "session": "LONDON"}

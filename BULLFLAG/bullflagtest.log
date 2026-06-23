@@ -1,0 +1,36 @@
+2025-05-11 18:48:06,527 - __main__ - INFO - Bull Flag Trading Backtester initialized
+2025-05-11 18:48:06,527 - __main__ - INFO - Trading instruments: ['EUR_USD']
+2025-05-11 18:48:06,527 - __main__ - INFO - Starting balance: $500.00
+2025-05-11 18:48:06,527 - __main__ - INFO - Starting backtest...
+2025-05-11 18:48:06,528 - __main__ - INFO - Loading historical data...
+2025-05-11 18:48:06,597 - __main__ - INFO - Loaded 31613 candles for EUR_USD
+2025-05-11 18:48:06,597 - __main__ - INFO - Historical data loading complete
+2025-05-11 18:50:55,831 - __main__ - INFO - 
+
+        ================================================================================
+        BULL FLAG TRADING BOT BACKTEST REPORT
+        ================================================================================
+        Backtest Period:          30 days
+        Starting Balance:         $500.00
+        Ending Balance:           $500.00
+        Net Profit:               $0.00
+        ROI:                      0.00%
+        --------------------------------------------------------------------------------
+        Total Trades:             0
+        Winning Trades:           0 (0.0%)
+        Losing Trades:            0
+        Profit Factor:            inf
+        Max Drawdown:             0.00%
+        --------------------------------------------------------------------------------
+        Average Trade Duration:   0:00:00
+        Commission Paid:          $0.00
+        ================================================================================
+        
+        INSTRUMENT PERFORMANCE:
+        ================================================================================
+        Instrument    Trades      Wins    Losses     Win %         Profit
+        
+================================================================================
+
+2025-05-11 18:50:55,832 - __main__ - INFO - Backtest completed in 169.30 seconds
+2025-05-11 18:50:55,832 - __main__ - INFO - Final balance: $500.00

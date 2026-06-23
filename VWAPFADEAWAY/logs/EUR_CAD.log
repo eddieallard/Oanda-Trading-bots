@@ -1,0 +1,33 @@
+2025-12-16 18:12:03,024 {"timestamp": "2025-12-16T23:12:03.023536+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.6}
+2025-12-16 18:13:18,173 {"timestamp": "2025-12-16T23:13:18.173050+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:14:33,243 {"timestamp": "2025-12-16T23:14:33.243566+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.4}
+2025-12-16 18:15:49,635 {"timestamp": "2025-12-16T23:15:49.635568+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 3.1}
+2025-12-16 18:17:05,816 {"timestamp": "2025-12-16T23:17:05.816731+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:18:21,111 {"timestamp": "2025-12-16T23:18:21.111253+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:19:49,129 {"timestamp": "2025-12-16T23:19:49.129072+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:21:06,589 {"timestamp": "2025-12-16T23:21:06.588886+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:22:23,290 {"timestamp": "2025-12-16T23:22:23.290274+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.4}
+2025-12-16 18:23:39,582 {"timestamp": "2025-12-16T23:23:39.582343+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:24:55,700 {"timestamp": "2025-12-16T23:24:55.700580+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.7}
+2025-12-16 18:26:27,904 {"timestamp": "2025-12-16T23:26:27.904744+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:27:57,780 {"timestamp": "2025-12-16T23:27:57.779975+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.8}
+2025-12-16 18:29:14,899 {"timestamp": "2025-12-16T23:29:14.899044+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:30:46,493 {"timestamp": "2025-12-16T23:30:46.493387+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:32:30,000 {"timestamp": "2025-12-16T23:32:29.999986+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.1}
+2025-12-16 18:34:14,589 {"timestamp": "2025-12-16T23:34:14.589255+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 18:35:58,007 {"timestamp": "2025-12-16T23:35:58.007459+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.6}
+2025-12-16 18:37:45,532 {"timestamp": "2025-12-16T23:37:45.532734+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 21:07:52,112 {"timestamp": "2025-12-17T02:07:52.112330+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.5}
+2025-12-16 21:09:37,898 {"timestamp": "2025-12-17T02:09:37.898798+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.4}
+2025-12-16 21:11:23,849 {"timestamp": "2025-12-17T02:11:23.849112+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:25:52,015 {"timestamp": "2025-12-17T02:25:52.014563+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-17 01:23:57,460 {"timestamp": "2025-12-17T06:23:57.460577+00:00", "instrument": "EUR_CAD", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:43:04,161 {"timestamp": "2025-12-17T06:43:04.161274+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.1}
+2025-12-17 01:53:52,559 {"timestamp": "2025-12-17T06:53:52.559076+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.2}
+2025-12-17 08:31:08,704 {"timestamp": "2025-12-17T13:31:08.704132+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-17 09:05:25,188 {"timestamp": "2025-12-17T14:05:25.187512+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 09:16:29,711 {"timestamp": "2025-12-17T14:16:29.711283+00:00", "instrument": "EUR_CAD", "event": "SETUP", "side": "BUY", "units": 108, "vwap": "1.620016475555555555555555556", "level": "1.616006666666666666666666667", "session": "LONDON"}
+2025-12-17 09:16:30,681 {"timestamp": "2025-12-17T14:16:30.680902+00:00", "instrument": "EUR_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 108, "entry": "1.61588", "sl": "1.61528", "tp": "1.61708", "session": "LONDON"}
+2025-12-17 09:18:45,147 {"timestamp": "2025-12-17T14:18:45.147709+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-17 09:29:03,150 {"timestamp": "2025-12-17T14:29:03.149888+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-17 09:59:11,563 {"timestamp": "2025-12-17T14:59:11.562951+00:00", "instrument": "EUR_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}

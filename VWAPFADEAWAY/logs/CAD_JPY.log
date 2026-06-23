@@ -1,0 +1,36 @@
+2025-12-16 18:12:08,729 {"timestamp": "2025-12-16T23:12:08.729383+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.1}
+2025-12-16 18:13:23,919 {"timestamp": "2025-12-16T23:13:23.919808+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:14:39,688 {"timestamp": "2025-12-16T23:14:39.688283+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5337742857142857142857143"}
+2025-12-16 18:14:40,160 {"timestamp": "2025-12-16T23:14:40.159928+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.523", "sl": "112.463", "tp": "112.643"}
+2025-12-16 18:15:56,705 {"timestamp": "2025-12-16T23:15:56.705059+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:17:11,927 {"timestamp": "2025-12-16T23:17:11.927735+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:18:27,445 {"timestamp": "2025-12-16T23:18:27.445122+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5332000000000000000000000"}
+2025-12-16 18:18:27,852 {"timestamp": "2025-12-16T23:18:27.852042+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.514", "sl": "112.454", "tp": "112.634"}
+2025-12-16 18:19:56,254 {"timestamp": "2025-12-16T23:19:56.254895+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5332038095238095238095238"}
+2025-12-16 18:19:56,646 {"timestamp": "2025-12-16T23:19:56.646273+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.518", "sl": "112.458", "tp": "112.638"}
+2025-12-16 18:21:13,711 {"timestamp": "2025-12-16T23:21:13.711446+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5326361904761904761904762"}
+2025-12-16 18:21:14,074 {"timestamp": "2025-12-16T23:21:14.074043+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.516", "sl": "112.456", "tp": "112.636"}
+2025-12-16 18:22:29,915 {"timestamp": "2025-12-16T23:22:29.914974+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5326409523809523809523810"}
+2025-12-16 18:22:30,301 {"timestamp": "2025-12-16T23:22:30.301154+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.519", "sl": "112.459", "tp": "112.639"}
+2025-12-16 18:23:46,234 {"timestamp": "2025-12-16T23:23:46.234436+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5326609523809523809523810"}
+2025-12-16 18:23:46,583 {"timestamp": "2025-12-16T23:23:46.583030+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.529", "sl": "112.469", "tp": "112.649"}
+2025-12-16 18:25:01,839 {"timestamp": "2025-12-16T23:25:01.839100+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:29:20,757 {"timestamp": "2025-12-16T23:29:20.757063+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:31:03,966 {"timestamp": "2025-12-16T23:31:03.966592+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:32:48,835 {"timestamp": "2025-12-16T23:32:48.835138+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:34:31,116 {"timestamp": "2025-12-16T23:34:31.116683+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:36:17,698 {"timestamp": "2025-12-16T23:36:17.698284+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-16 18:38:03,998 {"timestamp": "2025-12-16T23:38:03.998736+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.5630000000000000000000000", "vwap": "112.5310295238095238095238095"}
+2025-12-16 18:38:05,146 {"timestamp": "2025-12-16T23:38:05.146794+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.520", "sl": "112.460", "tp": "112.640"}
+2025-12-16 21:08:10,103 {"timestamp": "2025-12-17T02:08:10.103745+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.469400000000000000000000", "vwap": "112.5051780952380952380952381"}
+2025-12-16 21:08:11,091 {"timestamp": "2025-12-17T02:08:11.091200+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.466", "sl": "112.406", "tp": "112.586"}
+2025-12-16 21:09:56,285 {"timestamp": "2025-12-17T02:09:56.285782+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.469400000000000000000000", "vwap": "112.5051761904761904761904762"}
+2025-12-16 21:09:57,248 {"timestamp": "2025-12-17T02:09:57.248855+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.468", "sl": "112.408", "tp": "112.588"}
+2025-12-16 21:11:31,962 {"timestamp": "2025-12-17T02:11:31.962608+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "BUY", "level": "112.469400000000000000000000", "vwap": "112.5043857142857142857142857"}
+2025-12-16 21:11:32,345 {"timestamp": "2025-12-17T02:11:32.345105+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "BUY", "entry": "112.465", "sl": "112.405", "tp": "112.585"}
+2025-12-16 21:26:21,207 {"timestamp": "2025-12-17T02:26:21.207273+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "SELL", "units": 1, "vwap": "112.5024476190476190476190476", "level": "112.469400000000000000000000"}
+2025-12-16 21:26:22,313 {"timestamp": "2025-12-17T02:26:22.313458+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "SELL", "units": 1, "entry": "112.519", "sl": "112.579", "tp": "112.399"}
+2025-12-17 01:23:57,538 {"timestamp": "2025-12-17T06:23:57.537962+00:00", "instrument": "CAD_JPY", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:43:12,904 {"timestamp": "2025-12-17T06:43:12.903153+00:00", "instrument": "CAD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 08:31:21,270 {"timestamp": "2025-12-17T13:31:21.270115+00:00", "instrument": "CAD_JPY", "event": "SETUP", "side": "SELL", "units": 1, "vwap": "112.8651242424242424242424242", "level": "112.832800000000000000000000", "session": "LONDON"}
+2025-12-17 08:31:21,603 {"timestamp": "2025-12-17T13:31:21.603211+00:00", "instrument": "CAD_JPY", "event": "ORDER_SENT", "side": "SELL", "units": 1, "entry": "112.874", "sl": "112.934", "tp": "112.754", "session": "LONDON"}

@@ -1,0 +1,29 @@
+2025-12-16 18:12:06,529 {"timestamp": "2025-12-16T23:12:06.528875+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:13:21,593 {"timestamp": "2025-12-16T23:13:21.593673+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.1}
+2025-12-16 18:14:36,836 {"timestamp": "2025-12-16T23:14:36.836257+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 2.2}
+2025-12-16 18:15:53,665 {"timestamp": "2025-12-16T23:15:53.665323+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:17:09,629 {"timestamp": "2025-12-16T23:17:09.629373+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:18:24,726 {"timestamp": "2025-12-16T23:18:24.726542+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:19:53,229 {"timestamp": "2025-12-16T23:19:53.229172+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:21:10,996 {"timestamp": "2025-12-16T23:21:10.996805+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:22:27,155 {"timestamp": "2025-12-16T23:22:27.155437+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:23:43,440 {"timestamp": "2025-12-16T23:23:43.440213+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:24:59,620 {"timestamp": "2025-12-16T23:24:59.620191+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:26:39,805 {"timestamp": "2025-12-16T23:26:39.805827+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:28:02,101 {"timestamp": "2025-12-16T23:28:02.101036+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:29:18,503 {"timestamp": "2025-12-16T23:29:18.503338+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:30:57,486 {"timestamp": "2025-12-16T23:30:57.485925+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:32:42,105 {"timestamp": "2025-12-16T23:32:42.105536+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 18:34:24,833 {"timestamp": "2025-12-16T23:34:24.833612+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:36:10,625 {"timestamp": "2025-12-16T23:36:10.625355+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:37:57,646 {"timestamp": "2025-12-16T23:37:57.646017+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 21:08:02,174 {"timestamp": "2025-12-17T02:08:02.173995+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 21:09:49,267 {"timestamp": "2025-12-17T02:09:49.267720+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:11:29,601 {"timestamp": "2025-12-17T02:11:29.601326+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 21:26:06,939 {"timestamp": "2025-12-17T02:26:06.938960+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-17 01:23:57,507 {"timestamp": "2025-12-17T06:23:57.507071+00:00", "instrument": "AUD_CAD", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:43:09,792 {"timestamp": "2025-12-17T06:43:09.792061+00:00", "instrument": "AUD_CAD", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-17 09:05:49,633 {"timestamp": "2025-12-17T14:05:49.632806+00:00", "instrument": "AUD_CAD", "event": "SETUP", "side": "BUY", "units": 191, "vwap": "0.9173218666666666666666666667", "level": "0.912808", "session": "LONDON"}
+2025-12-17 09:05:50,802 {"timestamp": "2025-12-17T14:05:50.802214+00:00", "instrument": "AUD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 191, "entry": "0.91270", "sl": "0.91210", "tp": "0.91390", "session": "LONDON"}
+2025-12-17 09:59:35,783 {"timestamp": "2025-12-17T14:59:35.783841+00:00", "instrument": "AUD_CAD", "event": "SETUP", "side": "BUY", "units": 191, "vwap": "0.9173208400000000000000000000", "level": "0.912808", "session": "LONDON"}
+2025-12-17 09:59:36,766 {"timestamp": "2025-12-17T14:59:36.766428+00:00", "instrument": "AUD_CAD", "event": "ORDER_SENT", "side": "BUY", "units": 191, "entry": "0.91243", "sl": "0.91183", "tp": "0.91363", "session": "LONDON"}

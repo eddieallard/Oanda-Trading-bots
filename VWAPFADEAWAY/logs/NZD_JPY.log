@@ -1,0 +1,28 @@
+2025-12-16 18:12:06,901 {"timestamp": "2025-12-16T23:12:06.900673+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.7}
+2025-12-16 18:13:21,959 {"timestamp": "2025-12-16T23:13:21.959194+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:14:37,211 {"timestamp": "2025-12-16T23:14:37.211777+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:15:54,027 {"timestamp": "2025-12-16T23:15:54.027724+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:17:09,997 {"timestamp": "2025-12-16T23:17:09.997787+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:18:25,096 {"timestamp": "2025-12-16T23:18:25.096647+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:19:53,615 {"timestamp": "2025-12-16T23:19:53.615720+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:21:11,354 {"timestamp": "2025-12-16T23:21:11.354830+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:22:27,520 {"timestamp": "2025-12-16T23:22:27.520644+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:23:43,863 {"timestamp": "2025-12-16T23:23:43.863364+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:24:59,961 {"timestamp": "2025-12-16T23:24:59.961502+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 18:26:40,813 {"timestamp": "2025-12-16T23:26:40.813528+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.3}
+2025-12-16 18:28:02,478 {"timestamp": "2025-12-16T23:28:02.478524+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:29:18,888 {"timestamp": "2025-12-16T23:29:18.888089+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.2}
+2025-12-16 18:30:58,456 {"timestamp": "2025-12-16T23:30:58.456116+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:32:43,141 {"timestamp": "2025-12-16T23:32:43.140965+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 2.0}
+2025-12-16 18:34:25,881 {"timestamp": "2025-12-16T23:34:25.881463+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:36:11,652 {"timestamp": "2025-12-16T23:36:11.652269+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.9}
+2025-12-16 18:37:58,690 {"timestamp": "2025-12-16T23:37:58.690479+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.8}
+2025-12-16 21:09:50,335 {"timestamp": "2025-12-17T02:09:50.335155+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:11:29,992 {"timestamp": "2025-12-17T02:11:29.992800+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-16 21:26:11,035 {"timestamp": "2025-12-17T02:26:11.033572+00:00", "instrument": "NZD_JPY", "event": "SETUP", "side": "SELL", "units": 1, "vwap": "89.53652190476190476190476190", "level": "89.522000000000000000000000"}
+2025-12-16 21:26:11,967 {"timestamp": "2025-12-17T02:26:11.967727+00:00", "instrument": "NZD_JPY", "event": "ORDER_SENT", "side": "SELL", "units": 1, "entry": "89.537", "sl": "89.597", "tp": "89.417"}
+2025-12-17 01:23:57,517 {"timestamp": "2025-12-17T06:23:57.517345+00:00", "instrument": "NZD_JPY", "event": "ERROR", "message": "HTTPSConnectionPool(host='api-fxtrade.oanda.com', port=443): Max retries exceeded with url: /v3/accounts/001-001-9785546-001/summary (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000000004CB7ED0>: Failed to resolve 'api-fxtrade.oanda.com' ([Errno 11001] getaddrinfo failed)\"))"}
+2025-12-17 01:43:10,180 {"timestamp": "2025-12-17T06:43:10.180011+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.7}
+2025-12-17 08:31:16,506 {"timestamp": "2025-12-17T13:31:16.506400+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 09:05:51,826 {"timestamp": "2025-12-17T14:05:51.825688+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
+2025-12-17 09:16:50,210 {"timestamp": "2025-12-17T14:16:50.209510+00:00", "instrument": "NZD_JPY", "event": "SPREAD_BLOCK", "spread_pips": 1.6}
